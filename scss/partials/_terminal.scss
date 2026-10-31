@@ -1,0 +1,157 @@
+.terminal {
+  position: relative;
+  overflow: hidden;
+  min-width: 245px;
+  padding: 0 18px 14px;
+  border-color: var(--border-strong);
+  box-shadow: 4px 4px 0 var(--shadow);
+  font: 13px/1.7 var(--mono);
+
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 0 -18px 12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--subtle);
+    font-size: 10px;
+  }
+
+  &__lights {
+    display: flex;
+    gap: 5px;
+
+    i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--orange);
+
+      &:nth-child(2) {
+        background: var(--yellow);
+      }
+
+      &:nth-child(3) {
+        background: var(--green);
+      }
+    }
+  }
+
+  &__status {
+    color: var(--aqua);
+    font-size: 9px;
+  }
+
+  &__details {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 2px;
+  }
+
+  &__illustrations {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  &__books {
+    display: block;
+    width: 36%;
+    max-width: 110px;
+    flex: 0 1 36%;
+  }
+
+  &__drawing {
+    display: block;
+    width: 68%;
+    max-width: 220px;
+    flex: 0 1 68%;
+  }
+
+  b {
+    color: var(--green);
+  }
+
+  i {
+    color: var(--blue);
+    font-style: normal;
+  }
+}
+
+.drawing-ink,
+.drawing-accent,
+.drawing-detail,
+.book-lines,
+.book-page,
+.book-ink,
+.book-print,
+.book-gold {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.drawing-ink,
+.book-ink {
+  stroke: var(--text);
+}
+
+.drawing-accent {
+  stroke: var(--green);
+  stroke-width: 2;
+}
+
+.drawing-detail,
+.book-gold {
+  stroke: var(--yellow);
+}
+
+.book-detail {
+  stroke: var(--subtle);
+  stroke-width: 0.8;
+}
+
+.book-print {
+  stroke: var(--subtle);
+}
+
+.book-page {
+  stroke: var(--text-strong);
+  stroke-width: 1.4;
+}
+
+.book-lines {
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  &--blue {
+    color: var(--blue);
+  }
+
+  &--green {
+    color: var(--green);
+  }
+
+  &--orange {
+    color: var(--orange);
+  }
+}
+
+#theme-toggle {
+  margin-left: auto;
+  padding: 6px 10px;
+  color: var(--text);
+  cursor: pointer;
+  font: 12px var(--mono);
+
+  &:hover {
+    background: var(--card-hover);
+    border-color: var(--border-strong);
+  }
+}

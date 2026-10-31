@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 18px/1.6 var(--sans);
+  animation: page-enter 0.55s ease-out both;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--green-dark);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+  }
+}
+
+.terminal,
+.card,
+.skill,
+#theme-toggle,
+.contact a {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--green-dark);
+}
+
+a:focus-visible,
+#theme-toggle:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}

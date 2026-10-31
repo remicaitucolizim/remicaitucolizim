@@ -1,0 +1,36 @@
+.timeline {
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+
+.item {
+  position: relative;
+  margin-bottom: 25px;
+
+  &:before {
+    position: absolute;
+    top: 8px;
+    left: -29px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 4px var(--bg);
+    content: "";
+  }
+
+  h3 {
+    margin: 3px 0;
+    color: var(--text-strong);
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+  }
+}
+
+.date {
+  color: var(--green);
+  font: 11px var(--mono);
+}

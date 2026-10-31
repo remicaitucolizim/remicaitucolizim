@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Atkinson Hyperlegible;
+  src: url("AtkinsonHyperlegible-Regular-subset.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url("Ubuntu-700-normal-subset.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #1e2326;
+  --bg-soft: #272e33;
+  --card: #272e33;
+  --card-hover: #2e383c;
+  --text: #d3c6aa;
+  --text-strong: #e4d8b8;
+  --muted: #b0b9ad;
+  --subtle: #929e91;
+  --green: #a7c080;
+  --green-dark: #83a598;
+  --blue: #7fbbb3;
+  --aqua: #83c092;
+  --orange: #e69875;
+  --yellow: #dbbc7f;
+  --border: #414b50;
+  --border-strong: #56615f;
+  --shadow: #171c1f;
+  --radius: 12px;
+  --max: 1100px;
+  --mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  --sans: "Atkinson Hyperlegible", Ubuntu, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #f3f1e5;
+  --bg-soft: #e5e8d8;
+  --card: #fbf7e9;
+  --card-hover: #f1ecd9;
+  --text: #46534d;
+  --text-strong: #2f4037;
+  --muted: #56645c;
+  --subtle: #607066;
+  --green: #4c7049;
+  --green-dark: #426342;
+  --blue: #3d718d;
+  --aqua: #356f62;
+  --orange: #a4513b;
+  --yellow: #86651e;
+  --border: #c9cbb5;
+  --border-strong: #a9ae92;
+  --shadow: #d9dece;
+  color-scheme: light;
+}
