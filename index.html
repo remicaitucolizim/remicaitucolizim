@@ -315,6 +315,7 @@
 </footer>
 
 <script>
+// changement theme
 const root=document.documentElement,btn=document.getElementById("theme-toggle");
 const saved=localStorage.getItem("theme");
 
@@ -327,6 +328,7 @@ localStorage.setItem("theme",t);
 theme(saved||"night");
 btn.onclick=()=>theme(root.dataset.theme==="night"?"light":"night");
 
+// animation compétences
 const skills=document.querySelectorAll(".skill");
 if("IntersectionObserver" in window){
 const observer=new IntersectionObserver(entries=>{
